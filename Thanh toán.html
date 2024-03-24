@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .Sell{
+            font-size: 15px;
+            margin-top: 200px;
+            margin-left: 650px;
+            justify-content: center;
+            width: 450px;
+            height: 450px;
+            border: 1px solid rgb(19, 220, 255);
+            background-color:#bebebe;
+            text-align: center;
+        }
+        #headline{
+            border: 2px solid rgb(0, 255, 247);
+            margin-left: 120px;
+            width: 200px;
+            padding-bottom: 15px;
+        }
+        .Pay{
+            padding: 10px 5px;
+        }
+        .font-pay{
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        #font-thanhtoan{
+            outline: 0;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            width: 150px;
+            height: 35px;
+            background: transparent;
+            text-transform: uppercase;
+            transition: 0.25 ease-in-out;
+        }
+        #font-thanhtoan:hover{
+            border: 2px solid rgb(0, 255, 17);
+        }
+        .label{
+            margin-left: 0px;
+        }
+    </style>
+        <h1 id="headline">Thanh toán</h1>
+    </head>
+    <body class="Sell">
+        <td class=""><label for="pay-money" class="label">Chọn phương thức thành toán:</label></td>
+        <td>
+        <div class="font-pay">
+          <select name="pay" id="pay-money" style="width:200px; height: 30px" claa="babel">
+            <option value="Thẻ tín dụng">Thẻ tín dụng</option>
+            <option value="Ngân hàng">Ngân hàng</option>
+            <option value="Thẻ ghi nợ">Thẻ ghi nợ</option>
+            <option value="Trả góp">Trả góp</option>
+            <option value="Thanh toán khi nhận hàng">Thanh toán khi nhận hàng</option>
+          </select>
+            </div>
+          <td class=""><label id="gia" class="label">Nhập giá tiền phải thanh toán:</label></td>
+          <div class="font-pay">
+          <input type="text" id="tratien" style="width:200px; height: 30px">
+          </div>
+          <td class="" ><label class="label">Nhập số thẻ:</label></td>
+          <div class="font-pay">
+          <input type="text" id="cc"  style="width:200px; height: 30px">
+          </div>
+          <input type="submit" value="Thanh toán" id="font-thanhtoan">
+    </body>
+</html>

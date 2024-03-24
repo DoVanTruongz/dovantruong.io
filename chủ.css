@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+    
+    .container{
+     width: 1200px;
+     max-width: 100%;
+     margin: auto;
+    }
+}
+header{
+   width: 1200px;
+   height: 80px;
+ background-color:rgb(61,60,62) ;
+
+} 
+header .diachi ul{
+   list-style: none;
+    
+}
+header .diachi ul li{
+   float: left;
+   line-height: 80px;
+   padding: 0 15px;
+  
+}
+header .diachi ul a{
+   color: #ffffff;
+   font-size: 15px;
+   text-decoration: none;
+   
+}
+ nav{ 
+    height: 70px;
+    background: rgb(255, 0, 0);
+ }
+ nav .logo ul{
+    list-style: none
+ }
+ nav .logo ul li{
+   float: left;
+   line-height: 70px;
+   padding: 0 40px;
+ }
+ nav .logo ul a{
+   color: blueviolet;
+   font-size :30px;;
+   text-decoration: none;
+ }
+ nav .menu ul{
+    list-style: none;
+ }
+ nav .menu ul li{
+    float: left;
+    line-height: 50px;
+    padding: 0 10px;
+ }
+ nav .menu ul a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ nav .search{
+   line-height: 50px;
+ 
+ }
+  .menu, .search, .center{
+   float: left;
+
+   line-height: 50px;
+   padding: 10px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+#dangky{
+   height: 28px;
+    width: 135px;
+    background-color: rgb(4, 79, 255);
+    color: rgb(16, 2, 2);
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+    width: 100px;
+}
+#dangnhap{
+    height: 28px;
+    width: 130px;
+    background-color: rgb(0, 255, 8);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+}
+#dangky:hover{
+    background-color: rgb(2, 196, 226);
+    transform: scale(1.12);
+    border: 1px solid rgb(40, 40, 244);
+}
+#dangnhap:hover{
+    background-color: rgb(10, 149, 5);
+    transform: scale(1.12);
+    border: 1px solid rgb(42, 108, 4);
+}
+#search{
+   width: 100px;
+   background-color: rgb(106, 245, 245);
+}
+#search:hover{
+   border: 1px solid white;
+}
+ #silde{
+   background-color:rgb(61,60,62) ;
+   text-align: center;
+ }
+ article h3{
+   background-color: rgb(255, 0, 0);
+   padding: 15px ;
+   color: #0a0a0a;
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-align: center;
+ }
+ article .main{
+   background-color: rgb(61,60,62);  
+ }
+article .main .item{
+ 
+   color: #ffffff;
+   width: 28%;
+   padding: 2%;
+   float: left;
+}
+article .lose_main{
+    background-color: rgb(61,60,62);
+}
+article .lose_main .lose_item{
+  
+   color: #ffffff;
+   width: 28%;
+   padding: 2%;
+   float: left;
+}
+.footer{
+   
+   border-top: 4px solid red;
+   
+}
+.column{
+
+   width: 28%;
+   padding: 2%;
+   float: left;
+   
+}
+ 
+.footer-menu{
+   list-style: none;
+   padding: 30px;
+   padding-left: 0;
+}
+.footer-item_link{
+   text-decoration: none;
+   font-size: 16PX;
+   color: #0a0a0a;
+   display: flex;
+   align-items: center;
+
+}
+.footer-item_link:hover{
+   color: red;
+
+}
+.footer-download_diachi{
+   width: 350px;
+}
+#lhe:hover{
+   background-color: #00fff7;
+}
+#img:hover{
+    opacity: 0.65;
+    border: 2px solid rgb(0, 255, 217);
+}

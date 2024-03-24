@@ -1,0 +1,98 @@
+@import url('http://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    justify-content: center;
+    font-family: 'Open san', sans-serif;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+#wrapper{
+    width: 1170px;
+    margin: auto 0;
+}
+h3{
+    font-size: 18px;
+    color: #003ab8;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid #bebebe;
+    font-weight: 600px;
+    color: #555;
+}
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 20px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgb(0, 0, 0);
+}
+ul.products li .product-top{
+    position:relative;
+    overflow:hidden;
+}
+ul.products li .product-top .product-thumb{
+    display:block;
+}
+ul.products li .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #52ff46;
+    color:#111;
+    padding: 10px 0px;
+    position:absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    opacity: 0.85;
+}
+ul.products li .product-infor{
+    padding: 15px 0px;
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+
+}
+ul.products li .product-infor a{
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-infor a.product-cat{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9494f3;
+    padding: 3px 0px;
+}ul.products li .product-infor a.product-name{
+    color:#111;
+    padding: 3px px;
+}
+ul.products li .product-infor .product-price{
+    color: #111;
+    padding: 2px 0px;
+    font-weight: 600;
+}
