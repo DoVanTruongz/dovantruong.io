@@ -1,0 +1,60 @@
+
+body{
+    background-image: url(https://toigingiuvedep.vn/wp-content/uploads/2021/08/hinh-anh-dong-ho-dep-cho-nam.jpg);
+    background-size: cover;
+    
+}
+#form-actions{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Arial, sans-serif, ;
+    background-color: #ffffff4a;    
+    border-radius: 20px;
+
+}
+#user{
+    height: 30px;
+    width: 430px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background: none;
+    outline: none;
+}
+#pass{
+    height: 30px;
+    width: 430px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background: none;
+    outline: none;
+}
+#div2{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#resetpass{
+    margin-left: 320px;
+    color: rgb(251, 9, 9);
+}
+#login{
+    height: 30px;
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#huy{
+    height: 30px;
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    color: rgb(0, 0, 0)
+}

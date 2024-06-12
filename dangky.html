@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Đăng ký</title>
-<link rel="stylesheet" href="ss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dangky.css">
+    <title>Đăng ký tài khoản</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <h1>Đăng ký</h1>
-    <form action="thongbaothanhcong.html" >
-        <input type="text" name="username" placeholder="Tên người dùng" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Mật khẩu" required>
-        <a href="thongbaothanhcong.html"><button>Đăng ký</button></a>
-    </form>
-    <p>Đã có tài khoản? <a href="index.html">Đăng nhập</a></p>
-</div>
+    <div id="div2">
+        <form id="form-dangky" onsubmit="return validateForm()">
+            <h1 style="text-align: center;">Đăng ký tài khoản</h1>
+            <p style="text-align: center;">Đã có tài khoản ? <a href="dangnhap.html" style="color: rgb(0, 0, 0);">Đăng nhập</a></p>
+            <label>Họ và tên :</label><br>
+            <input type="text" id="fullname" name="fullname" ><br>
+            <label>Tài khoản :</label><br>
+            <input type="text" id="username" name="username" ><br>
+            <label>Mật khẩu :</label><br>
+            <input type="password" id="password" name="password"  ><br>
+            <label>Nhập lại mật khẩu :</label><br>
+            <input type="password" id="rePassword" name="rePassword" ><br>
+            <label>Email :</label><br>
+            <input type="text" id="email" name="email" ><br>
+            <div id="error" class="error"></div><br>
+            <button type="submit" id="dangky">Đăng Ký</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var fullname = document.getElementById("fullname").value;
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var rePassword = document.getElementById("rePassword").value;
+            var errorDiv = document.getElementById("error");
+            errorDiv.innerHTML = "";
+
+            if (!fullname || !username || !email || !password || !rePassword) {
+                errorDiv.innerHTML = "Vui lòng điền đầy đủ thông tin.";
+                return false;
+            }
+
+            if (password.length < 8) {
+                errorDiv.innerHTML = "Mật khẩu phải từ 8 ký tự trở lên.";
+                return false;
+            }
+
+            if (password !== rePassword) {
+                errorDiv.innerHTML = "Mật khẩu và Nhập lại mật khẩu không khớp.";
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                errorDiv.innerHTML = "Định dạng email không hợp lệ.";
+                return false;
+            }
+            else{
+                window.location.assign("dangnhap.html");
+            }
+            alert("Đăng ký thành công!");
+            return true;
+        }
+    </script>
 </body>
 </html>
